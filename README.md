@@ -35,3 +35,4 @@ Simple platelet Corrected Count Increment (CCI) calculator with a sleek UI and C
 ## Notes
 - Health endpoint: `/healthz`
 - This is decision support only; clinical judgment is required.
+# trigger
