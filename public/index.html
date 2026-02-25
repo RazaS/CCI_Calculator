@@ -1,0 +1,46 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Platelet CCI Calculator</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="card">
+    <h1>Platelet CCI Calculator</h1>
+    <p class="subtitle">Corrected Count Increment (CCI) decision support</p>
+
+    <div class="grid">
+      <label for="pre">Pre-platelet count (10^9/L)</label>
+      <input id="pre" type="number" inputmode="decimal" step="0.1" min="0" />
+
+      <label for="post">Post-platelet count (10^9/L)</label>
+      <input id="post" type="number" inputmode="decimal" step="0.1" min="0" />
+
+      <label for="height">Height (cm)</label>
+      <input id="height" type="number" inputmode="decimal" step="0.1" min="0" />
+
+      <label for="weight">Weight (kg)</label>
+      <input id="weight" type="number" inputmode="decimal" step="0.1" min="0" />
+
+      <label for="bsa">BSA (m^2)</label>
+      <input id="bsa" type="number" inputmode="decimal" step="0.001" min="0" />
+
+      <label for="dose">Platelets transfused (10^11)</label>
+      <input id="dose" type="number" inputmode="decimal" step="0.1" min="0" />
+    </div>
+
+    <div class="actions">
+      <button id="calcBsa" type="button">Calculate BSA</button>
+      <button id="calcCci" type="button" class="primary">Calculate CCI</button>
+      <button id="reset" type="button">Reset</button>
+    </div>
+
+    <section id="result" class="result" aria-live="polite"></section>
+    <p class="footnote">For clinical support only. Use alongside clinical judgment.</p>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
