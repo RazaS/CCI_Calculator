@@ -61,7 +61,7 @@ document.getElementById("calcCci").addEventListener("click", () => {
 
 document.getElementById("reset").addEventListener("click", () => {
   [fields.pre, fields.post, fields.height, fields.weight, fields.bsa, fields.dose].forEach((input) => {
-    input.value = "";
+    input.value = input.defaultValue;
   });
   setResult("");
 });
